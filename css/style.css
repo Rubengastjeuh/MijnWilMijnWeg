@@ -22,20 +22,65 @@ body {
     font-size: 1.8rem;
 }
 .bigCard{
-    justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 4rem;
+    margin: 4rem;
     text-align: left;
     background-color: var(--blue);
     border-radius: 2rem;
     font-size: x-large;
 }
-form.sideBySide{
+form.labelNextInput{
     display: grid;
     grid-template-columns: max-content max-content;
     grid-row-gap: 2rem;
     grid-column-gap: 6rem;
 }
+form.aboveUnder{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin: 2rem;
+    text-align: left;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    font-size: x-large;
+}
+
+.cardInRow
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.containerDeBox{
+    border: solid var(--blue) 2rem;
+    border-radius: 5rem;
+    padding: 3rem;
+}
+.containerDeBox h1{
+    color: var(--white);
+    text-align: center;
+    display: block;
+    background-color: var(--blue);
+    margin:1rem -3rem;
+}
+.containerDeBoxCard
+{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin: 2rem;
+    text-align: left;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    font-size: x-large;
+}
+
+
+
 /*buttons*/
 .button{
     background-color: var(--pink);
@@ -60,6 +105,9 @@ input{
 }
 label{
     color: var(--white);
+}
+form label {
+    padding-top: 1rem;
 }
 h1{
     color: var(--white);
@@ -132,7 +180,7 @@ footer a:first-child{
 /*Mobile*/
 @media screen and (max-width: 750px)
 {
-    form.sideBySide{
+    form.labelNextInput{
         display: flex;
         flex-direction: column;
     }
