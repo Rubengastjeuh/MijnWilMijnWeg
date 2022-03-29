@@ -36,7 +36,7 @@ form.labelNextInput{
     grid-row-gap: 2rem;
     grid-column-gap: 6rem;
 }
-form.aboveUnder{
+.aboveUnder{
     display: flex;
     flex-direction: column;
 }
@@ -83,6 +83,15 @@ form.aboveUnder{
     background-color: var(--blue);
     border-radius: 2rem;
     font-size: x-large;
+}
+.containerDeBoxCard:first-child{
+    flex-direction: row-reverse;
+}
+.containerDeBoxCard:nth-last-child(2){
+    flex-direction: row-reverse;
+}
+.containerDeBoxCard img{
+    margin: 2rem;
 }
 
 
