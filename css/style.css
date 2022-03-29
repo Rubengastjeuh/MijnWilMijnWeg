@@ -2,23 +2,149 @@ html{
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 62.5%;
 }
+body {
+    background-image: url("../assets/Achtergrond patronen blauw 2.png");
+}
+:root {
+    --blue: #73A0DC;
+    --blueTR: rgb(115, 160, 220,0.7);
+    --white: #ffffff;
+    --pink: #C978B1;
+    --pinkTR: rgba(201, 120, 177,0.7);
+    --black: #000000
+}
+/*classes*/
 .container-main{
     margin: 0 auto;
-    padding: 0.3rem 1rem 0.3rem 1rem;
+    padding: 5rem 5rem 5rem 5rem;
+    min-width: 500px;
     max-width: 1280px;
     font-size: 1.8rem;
 }
 .bigCard{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 1rem;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4rem;
     text-align: left;
-    background-color: #73A0DC;
+    background-color: var(--blue);
     border-radius: 2rem;
+    font-size: x-large;
 }
-
 form.sideBySide{
     display: grid;
     grid-template-columns: max-content max-content;
     grid-row-gap: 2rem;
-    grid-column-gap: 8rem;
+    grid-column-gap: 6rem;
 }
+/*buttons*/
+.button{
+    background-color: var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+.btnRegistreer {
+    font-size: x-large;
+}
+.btnLogin {
+    font-size: x-large;
+    padding: 1rem 3rem;
+}
+
+/*components*/
+input{
+    border-radius: 1rem;
+}
+label{
+    color: var(--white);
+}
+h1{
+    color: var(--white);
+}
+/*Header*/
+header {
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0 2rem 0;
+    color: var(--pink);
+    background-image: linear-gradient(to top, rgba(115, 160, 220,0.2), rgb(255, 255, 255));
+
+}
+header a:first-child{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    padding-right: 5rem;
+}
+header nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a{
+    font-size: xx-large;
+    padding: 2rem;
+    list-style:none;
+    color: inherit;
+    border-radius: 8rem;
+}
+header nav ul li a:hover,header nav ul li a:focus {
+        transition: 0.7s ease-out;
+        color: var(--white);
+        background-color: var(--blueTR);
+}
+header nav a{
+    text-decoration: none;
+    color: inherit;
+}
+header .active{
+    border-radius: 8rem;
+    background-color: var(--blueTR);
+    color: var(--white);
+}
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding-left: 2rem;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--pink);
+    color: var(--white);
+    text-align: center;
+    font-size: medium;
+}
+footer div{
+    padding: 1rem;
+}
+footer a:first-child{
+    padding-top: 2.5rem;
+}
+
+/*Mobile*/
+@media screen and (max-width: 750px)
+{
+    form.sideBySide{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        max-width: 30rem;
+    }
+    header nav ul{
+        flex-direction: column;
+    }
+    header img{
+        padding-right: 0;
+    }
+
+}
+
