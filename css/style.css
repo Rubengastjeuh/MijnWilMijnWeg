@@ -44,7 +44,6 @@ form.aboveUnder{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 2rem;
     margin: 2rem;
-    text-align: left;
     background-color: var(--blue);
     border-radius: 2rem;
     font-size: x-large;
@@ -53,7 +52,14 @@ form.aboveUnder{
 .cardInRow
 {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+}
+@media screen and (max-width: 1280px)
+{
+    .cardInRow
+    {
+        flex-wrap: wrap;
+    }
 }
 .containerDeBox{
     border: solid var(--blue) 2rem;
@@ -192,6 +198,9 @@ footer a:first-child{
     }
     header img{
         padding-right: 0;
+    }
+    .cardInRow {
+        flex-direction: column;
     }
 
 }
