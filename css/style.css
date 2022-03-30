@@ -274,3 +274,12 @@ fieldset{
     margin: 0;
     padding: 0;
 }
+.Next{
+    background-color: var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
+}
