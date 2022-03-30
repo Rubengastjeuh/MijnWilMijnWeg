@@ -13,7 +13,7 @@
 <body>
 <header>
     <a href="#"> <img src="assets/logo%20mijn%20wil%20mijn%20weg.png" alt="logo" width=350"></a>
-    <nav >
+    <nav>
         <ul>
             <li><a href="./box.html">Box</a></li>
             <li><a href="./contact.html">Contact</a></li>
@@ -24,39 +24,65 @@
     </nav>
 </header>
 <main class="container-main">
-    <div class="bigCard">
-        <h1>Forum  </h1>
-        <form class="aboveUnder">
-            <label>Vraag1: Wat is de code van jouw box?</label>
-            <label><input type="text" name="Code"> </label>
+    <section class="formCard">
+        <form action="#">
+            <h1>Ontdek je talenten!</h1>
+            <div>
+                <label for="vraag1">Vraag 1: Wat is de code van jouw box? <abbr
+                        title="Dit is een verplicht in te vullen veld" class="required">*</abbr> </label><br>
+                <input type="text" name="vraag1" id="vraag1" tabindex="0" autofocus required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <label for="vraag2">Vraag 2: Voornaam en familie naam:<abbr
+                        title="Dit is een verplicht in te vullen veld" class="required">*</abbr></label><br>
+                <input type="text" name="vraag2" id="vraag2" required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <label for="vraag3">Vraag 3: Email adres: <abbr title="Dit is een verplicht in te vullen veld"
+                                                               class="required">*</abbr></label><br>
+                <input type="text" name="vraag3" id="vraag3" required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <label for="vraag4">Vraag 4: GSM nummer:</label><br>
+                <input type="text" name="vraag4" id="vraag4" required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <label for="vraag5">Vraag 5: Adres:</label><br>
+                <input type="text" name="vraag5" id="vraag5" required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Vraag 7: Bent u leerling of student? <abbr title="Dit is een verplicht in te vullen veld"
+                                                                      class="required">*</abbr></legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="student" name="type" value="student" required>
+                            <label for="student"> student</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="leerling" name="type" value="leerling">
+                            <label for="leerling"> leerling</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
 
-            <label>Vraag2: Voornaam en afmilie naam: </label>
-            <label> <input type="text" name="Naam"> </label>
-
-            <label>Vraag3: Email adres: </label>
-            <label> <input type="text" name="Email"> </label>
-
-            <label>Vraag4: GSM nummer: </label>
-            <label>
-                <input type="text" name="GSM">
-            </label>
-
-            <label>Vraag5: Adres: </label>
-            <label>
-                <input type="text" name="Adres">
-            </label>
-
-            <label>Vraag6: Postcode: </label>
-            <label> <input type="text" name="Postcode">  </label>
-
-            <label>Vraag7: Bent u leerling of student? </label>
-            <label> <input type="text" name="LofS">  </label>
-
-            <label>Vraag8: Leeftijd: </label>
-            <label><input type="text" name="Leeftijd"></label>
+            <div>
+                <label for="vraag7">Vraag 8: Leeftijd: <abbr title="Dit is een verplicht in te vullen veld"
+                                                            class="required">*</abbr> </label><br>
+                <input type="number" name="vraag7" id="vraag7" min="0" max="99" required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <button type="submit">Verstuur het formulier</button>
+            </div>
         </form>
-        <button class="button btnVolgende">Volgende</button>
-    </div>
+    </section>
 </main>
 <footer>
     <a href="#"> <img src="assets/logo%20mijn%20wil%20mijn%20weg%20tekst.png" alt="logo" width=250"></a>

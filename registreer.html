@@ -27,19 +27,21 @@
 <main class="container-main">
     <div class="bigCard">
         <h1>Account aanmaken</h1>
-        <form class="labelNextInput">
+        <form>
+            <label for="username">Gebruikersnaam: </label>
+            <input type="text" name="Gebruikersnaam" id="username">
 
-            <label>Gebruikersnaam: </label>
-            <input type="text" name="Gebruikersnaam">
+            <label for="email">Email adres: </label>
+            <input type="text" name="Gebruikersnaam" id="email">
 
-            <label> Wachtwoord: </label>
-            <input type="text" name="wachtwoord">
+            <label for="password"> Wachtwoord: </label>
+            <input type="text" name="wachtwoord" id="password">
 
-            <label> Bevestig wachtwoord: </label>
-            <input type="text" name="bevestigWW">
+            <label for="confirmPassword"> Bevestig wachtwoord: </label>
+            <input type="text" name="bevestigWW" id="confirmPassword">
 
-            <label>Geboortedatum: </label>
-            <input type="text" name="gDatum">
+            <label for="birth">Geboortedatum: </label>
+            <input type="text" name="gDatum" id="birth">
         </form>
         <button class="button btnRegistreer">Registreer</button>
     </div>

@@ -4,6 +4,7 @@ html{
 }
 body {
     background-image: url("../assets/Achtergrond patronen blauw 2.png");
+    margin: 0 auto;
 }
 :root {
     --blue: #73A0DC;
@@ -11,13 +12,14 @@ body {
     --white: #ffffff;
     --pink: #C978B1;
     --pinkTR: rgba(201, 120, 177,0.7);
-    --black: #000000
+    --black: #000000;
+    --error-color: rgb(200,0,0);
+    --button-hover-color: #915680;
 }
 /*classes*/
 .container-main{
     margin: 0 auto;
     padding: 5rem 5rem 5rem 5rem;
-    min-width: 500px;
     max-width: 1280px;
     font-size: 1.8rem;
 }
@@ -30,12 +32,13 @@ body {
     border-radius: 2rem;
     font-size: x-large;
 }
-form.labelNextInput{
+
+/*form.labelNextInput{
     display: grid;
     grid-template-columns: max-content max-content;
     grid-row-gap: 2rem;
     grid-column-gap: 6rem;
-}
+}*/
 .aboveUnder{
     display: flex;
     flex-direction: column;
@@ -48,14 +51,11 @@ form.labelNextInput{
     border-radius: 2rem;
     font-size: x-large;
 }
-
-.cardInRow
-{
+.cardInRow {
     display: flex;
     flex-direction: row;
 }
-@media screen and (max-width: 1280px)
-{
+@media screen and (max-width: 1280px) {
     .cardInRow
     {
         flex-wrap: wrap;
@@ -73,8 +73,7 @@ form.labelNextInput{
     background-color: var(--blue);
     margin:1rem -3rem;
 }
-.containerDeBoxCard
-{
+.containerDeBoxCard {
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 2rem;
@@ -93,9 +92,6 @@ form.labelNextInput{
 .containerDeBoxCard img{
     margin: 2rem;
 }
-
-
-
 /*buttons*/
 .button{
     background-color: var(--pink);
@@ -113,20 +109,10 @@ form.labelNextInput{
     font-size: x-large;
     padding: 1rem 3rem;
 }
-
 /*components*/
-input{
-    border-radius: 1rem;
-    min-width: 20rem;
-}
-label{
-    color: var(--white);
-}
-form label {
-    padding-top: 1rem;
-}
 h1{
     color: var(--white);
+    font-size: 3rem;
 }
 /*Header*/
 header {
@@ -192,17 +178,8 @@ footer div{
 footer a:first-child{
     padding-top: 2.5rem;
 }
-
 /*Mobile*/
-@media screen and (max-width: 850px)
-{
-    form.labelNextInput{
-        display: flex;
-        flex-direction: column;
-    }
-    input{
-        max-width: 30rem;
-    }
+@media screen and (max-width: 750px) {
     header nav ul{
         flex-direction: column;
     }
@@ -215,3 +192,68 @@ footer a:first-child{
 
 }
 
+/*Form*/
+.formCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4rem;
+    margin: 4rem;
+    text-align: left;
+    background-color: var(--blue);
+    border-radius: 2rem;
+}
+input[type=text],input[type=number]{
+    width: 100%;
+    padding: 1.2rem 2rem;
+    margin: 0.8rem 0;
+    display: inline-block;
+    border: 0.1rem solid var(--white);
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    min-width: 20rem;
+}
+fieldset > ul{
+    list-style: none;
+}
+input[type=submit], button{
+    width: 100%;
+    padding: 1.2rem 2rem;
+    display: inline-block;
+    background-color: var(--pink);
+    border: 0.1rem solid var(--white);
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    min-width: 20rem;
+}
+input[type=radio], input[type=checkbox]
+{
+    width: 1.5rem;
+    cursor: pointer;
+}
+input[type=radio]+label, input[type=checkbox]+label{
+    display: inline;
+    cursor: pointer;
+}
+label>abbr.required{
+    color: var(--error-color);
+    text-decoration: none;
+}
+legend>abbr.required{
+    color: var(--error-color);
+    text-decoration: none;
+}
+label{
+    color: var(--white);
+}
+form div{
+    margin: 2rem;
+}
+form div label, form div legend{
+
+    color: var(--white);
+    font-size: x-large;
+}
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
