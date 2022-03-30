@@ -24,6 +24,28 @@ body {
     max-width: 1280px;
     font-size: 1.8rem;
 }
+
+.containerIntro{
+    background-color: var(--white);
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.homeNav{
+     position: absolute;
+     left: 90px;
+     top: 400px;
+}
+
+.homeNav > ul > li a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--blue);
+    display: block;
+    margin-bottom: 50px;
+}
+
 .bigCard{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 4rem;
@@ -178,6 +200,11 @@ h1{
 #imgBox{
     margin: auto;
     display: block;
+}
+
+#imgHomepage{
+    display: block;
+    margin: auto;
 }
 
 /*header*/
