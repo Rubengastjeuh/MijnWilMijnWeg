@@ -110,6 +110,23 @@ body {
     border-radius: 2rem;
     font-size: x-large;
 }
+.containerDeBoxCardNoBG {
+    display: flex;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: left;
+    border-radius: 2rem;
+    font-size: x-large;
+}
+.containerDeBoxCardNoBG:first-child{
+    flex-direction: row-reverse;
+}
+.containerDeBoxCardNoBG:nth-last-child(2){
+    flex-direction: row-reverse;
+}
+.containerDeBoxCardNoBG img{
+    margin: 2rem;
+}
 .containerDeBoxCard:first-child{
     flex-direction: row-reverse;
 }
@@ -305,4 +322,13 @@ fieldset{
     border: none;
     margin: 0;
     padding: 0;
+}
+.Next{
+    background-color: var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
 }

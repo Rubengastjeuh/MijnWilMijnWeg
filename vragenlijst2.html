@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
-    <title>Forum</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+    <title>Vragenlijst Deel 2</title>
 </head>
 <body>
 <header>
-
+    <a href="#"> <img src="assets/logo%20mijn%20wil%20mijn%20weg.png" alt="logo" width="350"></a>
+    <nav>
+        <ul>
+            <li><a href="./box.html">Box</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./over-ons.html">Over ons</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./registreer.html">Registreer</a></li>
+        </ul>
+    </nav>
 </header>
-<main>
-    <div class="container-cloud">
+<main class="container-main">
+    <section class="formCard">
+        <form action="#">
+            <h1>Ontdek je talenten!</h1>
 
-    </div>
-    <div class="container-main">
-        <h1>Forum</h1>
+            <div>
+                <fieldset>
+                    <legend>Vraag 9:Wat is jouw favoriete social media? <abbr title="Dit is een verplicht in te vullen veld"
+                                                                      class="required">*</abbr></legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="fb" name="type" value="fb" required>
+                            <label for="fb"> Facebook</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="snap" name="type" value="snap">
+                            <label for="snap"> Snapchat</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="insta" name="type" value="insta">
+                            <label for="insta"> Instagram</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div>
+                <label for="Vraag10">Vraag10: Via welke manier wil jij het liefst benadert worden door onze coach? <abbr
+                        title="Dit is een verplicht in te vullen veld" class="required">*</abbr> </label><br>
+                <input type="text" name="vraag1" id="vraag1" tabindex="0" autofocus required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <label for="Vraag11">Vraag11: We willen jou graag beter leren kennen door meer te weten over jouw verwachtingen en jouw visie op de wereld waar we nu in leven.
 
-        <form>
-            <legend>Vraag9: Wat is jouw favoriete social media?</legend>
-            <input type="radio" name="action" id="fb" value="fb"/>
-            <label for="fb">Facebook</label><br/>
-            <input type="radio" name="action" id="insta" value="insta"/>
-            <label for="insta">Instagram</label><br/>
-            <input type="radio" name="action" id="snap" value="snap"/><label for="snap">Snapchat</label><br/>
-            <input type="radio" name="action" id="andere" value="andere"/><label for="andere">Andere: </label><br/>
-            <input type="text" name="Naam">
-        </form>
-        <form>
-            <p>Vraag10: Via welke manier wil jij het liefst benadert worden door onze coach? </p>
-            <input type="text" name="manier">
-        </form>
-        <form>
-            <p>Vraag11: We willen jou graag beter leren kennen door meer te weten over jouw verwachtingen en jouw visie
-                op de wereld waar we nu in leven.
+                    Wat verwacht je van jouw ‘Mijn wil, mijn weg’-traject? Wat zou je er graag mee willen bereiken?<abbr
+                        title="Dit is een verplicht in te vullen veld" class="required">*</abbr></label><br>
+                <input type="text" name="vraag2" id="vraag2" required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <label for="Vraag12">Vraag12:Bij ‘Mijn wil, mijn weg’ gaan we ervan uit dat iedereen van iedereen kan leren, ongeacht de leeftijd, afkomst of geaardheid. Vertrekkend van hieruit zijn we benieuwd hoe jij onze wereld ziet waarin we leven. Wat zijn zoal dingen dat goed verlopen en dat niet goed lopen? Heb je al een idee welke rol jij wil opnemen in deze wereld? Dan mag je dit ook delen.
 
-                Wat verwacht je van jouw ‘Mijn wil, mijn weg’-traject? Wat zou je er graag mee willen bereiken? </p>
-            <input type="text" name="jijzelf">
+                    Schrijf zoveel je wil, jouw antwoorden worden niet doorgestuurd naar andere partijen. We willen jou oprecht leren kennen.<abbr title="Dit is een verplicht in te vullen veld"
+                                                               class="required">*</abbr></label><br>
+                <input type="text" name="vraag3" id="vraag3" required>
+                <!--div id="firstname-valid" class="inputDescription">error</div>-->
+            </div>
+            <div>
+                <a class="Next" type="submit" href="vragenlijstcompleet"> Volgende</a>
+            </div>
         </form>
-        <form>
-            <p>Vraag12:Bij ‘Mijn wil, mijn weg’ gaan we ervan uit dat iedereen van iedereen kan leren, ongeacht de
-                leeftijd, afkomst of geaardheid. Vertrekkend van hieruit zijn we benieuwd hoe jij onze wereld ziet
-                waarin we leven. Wat zijn zoal dingen dat goed verlopen en dat niet goed lopen? Heb je al een idee welke
-                rol jij wil opnemen in deze wereld? Dan mag je dit ook delen.
-
-                Schrijf zoveel je wil, jouw antwoorden worden niet doorgestuurd naar andere partijen. We willen jou
-                oprecht leren kennen.
-            </p>
-            <input type="text" name="Naam">
-        </form>
-        <a class="btn" href="">Volgende</a>
-    </div>
+    </section>
 </main>
 <footer>
-    <div class="footer-logo">
-        <a style="float: left;" href="Contact.htlm" class="FooterLogo">Mijn wil, mijn weg</a>
+    <a href="#"> <img src="assets/logo%20mijn%20wil%20mijn%20weg%20tekst.png" alt="logo" width="250"></a>
+    <div>
+        <a href="https://www.facebook.com/"> <img src="assets/Facebook_icon.png" alt="logo" width="50"></a>
+        <a href="https://www.instagram.com/"> <img src="assets/insta%20icon.png" alt="logo" width="50"></a>
+        <a href="https://www.twitter.com/"> <img src="assets/twitter%20icon.png" alt="logo" width="50"></a>
     </div>
-    <a style="float: left;" href="" class="FooterContact">Contact</a>
-    <i class="fa fa-instagram" style="font-size:36px"></i>
-    <i class="fa fa-twitter" style="font-size:36px"></i>
-    <i class="fa fa-facebook" style="font-size:36px"></i>
 </footer>
 
 
