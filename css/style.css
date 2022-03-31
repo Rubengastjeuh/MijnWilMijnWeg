@@ -157,6 +157,10 @@ hr{
     border-radius: 2rem;
     font-size: x-large;
 }
+.containerDeBoxCardNoBG p {
+    color: var(--black);
+
+}
 .containerDeBoxCardNoBG:first-child{
     flex-direction: row-reverse;
 }
@@ -396,3 +400,28 @@ fieldset{
     padding: 1rem;
     margin-top: 5rem;
 }
+/*traject pagina*/
+
+progress {
+    accent-color: var(--button-hover-color);
+  }
+
+.flex-container {
+    display: flex;
+    align-items: center;
+
+  }
+  .flex-container flexlijn {
+    margin: 1rem;
+    padding: 1,5rem;
+  }
+
+  .flex-container flexlijn img {
+      align-items: center;
+      width: 100%;
+  }
+  .witruimte {
+      padding: 6rem;
+  }
+
+ 
