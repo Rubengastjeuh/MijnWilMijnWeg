@@ -80,6 +80,23 @@ body {
     width: 40%;
 }
 
+.containerGebruikerOne{
+    display: inline-block;
+    width: 45%;
+    padding-top: 5rem;
+    margin-left: 3rem;
+}
+
+.containerGebruikerTwo{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+hr{
+    border-top: 5px solid var(--white);
+}
+
 /*form.labelNextInput{
     display: grid;
     grid-template-columns: max-content max-content;
@@ -176,6 +193,14 @@ body {
     font-size: x-large;
     padding: 1rem 3rem;
 }
+
+.btnUitloggen{
+    font-size: xx-large;
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
 /*components*/
 h1{
     color: var(--white);
@@ -205,6 +230,18 @@ h1{
 #imgHomepage{
     display: block;
     margin: auto;
+}
+
+#imgGebruiker{
+    width: 500px;
+    height: 500px;
+}
+
+#imgTraject{
+    display: block;
+    margin-top: 55%;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 /*header*/
