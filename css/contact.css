@@ -1,0 +1,143 @@
+
+
+/*Kevin Van den Daele*/
+
+
+:root {
+    --blue: #73A0DC;
+    --blueTR: rgb(115, 160, 220,0.7);
+    --white: #ffffff;
+    --pink: #C978B1;
+    --pinkTR: rgba(201, 120, 177,0.7);
+    --black: #000000;
+    --error-color: rgb(200,0,0);
+    --button-hover-color: #915680;
+}
+
+footer{
+    position:relative;
+}
+
+footer div {
+    padding-right:3rem;
+}
+
+.contactCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4rem;
+    margin: 4rem;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    font-size: x-large;
+    overflow: hidden
+
+}
+
+input[type=text]{
+    width: 60%;
+    float: right;
+}
+
+input[type=submit], button {
+    width: 20%;
+    padding: 1.2rem 2rem;
+    display: inline-block;
+    background-color: var(--pink);
+    border: 0.1rem solid var(--white);
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    min-width: 20rem;
+    float: right;
+}
+
+textarea {
+    padding: 1.2rem 2rem;
+    border: 0.1rem solid var(--white);
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    min-width: 20rem;
+    vertical-align: top;
+    width: 60%;
+    float: right;
+}
+
+#coach {
+    padding: 1.2rem 2rem;
+    display: flex;
+    width: 100%;
+}
+
+#coach #coachText{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#coach #imageCoach{
+    width: 200px;
+    height; 200px;
+}
+
+#coach #imageCoach img {
+    margin-top: 24px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+
+    h1 {
+        font-size: 18px;
+        padding-left: 0px;
+    }
+
+    #coach #coachText{
+        width: 100%;
+        margin-left:15px;
+    }
+
+    form div{
+        margin: 0rem;
+    }
+
+    .container-main{
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+
+    textarea{
+        width:100%;
+    }
+
+    button {
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #coach{
+        display:inline;
+    }
+
+    #coach #imageCoach{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    p{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer{
+        display: block;
+    }
+
+    footer img{
+        margin-top:2rem;
+    }
+}

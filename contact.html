@@ -1,10 +1,70 @@
+
+
+<!-- auteur: Kevin Van den Daele-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
-
+    <header>
+        <a href="index.html"> <img src="assets/logo%20mijn%20wil%20mijn%20weg.png" alt="logo" width=350"></a>
+        <nav>
+            <ul>
+                <li><a href="./box.html">Box</a></li>
+                <li class="active"><a href="./contact.html">Contact</a></li>
+                <li><a href="./over-ons.html">Over ons</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./registreer.html">Registreer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-main">
+        <div class="contactCard">
+            <h1>Contact: Candy Junius</h1>
+            <form>
+                <div id="email">
+                    <label id="email" for="Email">Email: </label>
+                    <input id="emailText" type="text" name="email">
+                </div>
+                <br/>
+                <div id="message">
+                    <label for="message"> Bericht: </label>
+                    <textarea id="bericht" name="bericht" rows="4" cols="50"></textarea>
+                </div>
+            </form>
+            <div id="coach">
+                <div id="imageCoach">
+                    <img src="assets/imgContact.png" alt="foto van de coach">
+                </div>
+                <div id="coachText">
+                    <p>
+                        Ik ben Candy en je moogt me gerust
+                        altijd een bericht sturen ik zal mijn
+                        best doen om zo rap mogelijk te antwoorden!
+                    </p>
+                </div>
+            </div>
+            <button class="btncontact">Verstuur Bericht!</button>
+        </div>
+    </main>
+    <footer>
+        <a href="#"> <img src="assets/logo%20mijn%20wil%20mijn%20weg%20tekst.png" alt="logo" width=250"></a>
+        <div>
+            <a href="https://www.facebook.com/"> <img src="assets/Facebook_icon.png" alt="logo" width=50"></a>
+            <a href="https://www.instagram.com/"> <img src="assets/insta%20icon.png" alt="logo" width=50"></a>
+            <a href="https://www.twitter.com/"> <img src="assets/twitter%20icon.png" alt="logo" width=50"></a>
+        </div>
+    </footer>
 </body>
 </html>
